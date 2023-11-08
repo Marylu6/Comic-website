@@ -88,6 +88,7 @@ h1{
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
  background-color: var( --darker-gray);
+    border-radius: 30px;
 }
 
 .paragraph_about{
