@@ -1,5 +1,8 @@
 
 document.addEventListener("DOMContentLoaded", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentPage = urlParams.get('page');
+
     const comicImage = document.getElementById("comic-image");
     const firstPageButton = document.getElementById("first_page");
     const backPageButton = document.getElementById("back_page");
@@ -7,17 +10,32 @@ document.addEventListener("DOMContentLoaded", function () {
     const latestPageButton = document.getElementById("latest_page");
 
     const comicPages = [
+        "ch 1 cover.png",
         "page1.png",
         "page2.png",
-        "page3.png"
-        // Add more page filenames as needed
+        "ch 2 cover.png"
+        // Add more pages remember it needs to be the same filenames 
     ];
+
+    function updateComicPage(pageIndex) {
+        const comicImage = document.getElementById("comic-image");
+        comicImage.src = `pages/${comicPages[pageIndex]}`;
+    }
+
+    if (currentPage) {
+        const pageIndex = parseInt(currentPage, 10);
+        if (!isNaN(pageIndex) && pageIndex >= 1 && pageIndex <= comicPages.length) {
+            currentPageIndex = pageIndex - 1;
+            updateComicPage();
+        }
+    }
 
     const comicPagesData = [
         { number: "#1", date: "Uploaded: 10/17/23" },
         { number: "#2", date: "Uploaded: 10/24/23" },
-        { number: "#3", date: "Uploaded: 10/29/23" }
-        // Add more page data as needed
+        { number: "#3", date: "Uploaded: 10/29/23" },
+        { number: "#4", date: "Uploaded: 11/13/23" }
+        // Add number and time remember to update every time a new page is introduce
     ];
 
     let currentPageIndex = 0;
