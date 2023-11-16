@@ -9,7 +9,7 @@ notes:
 so i couldnt fix the links on the archive (gracias por la zero ayudas stack overflow) so i need to erase the entire thing and make it more "simpler" will tried putting a small archive list in the index with all the pages. Make sure to hide the list in with a button
 add event listeners to call specific pages-----/////-------
 
-make sure that archive box--------////--------
+make sure that archive box does not disturb the reader and is pretty(simple but pretty)--------////--------
 
 add more comic pages----////------
 
