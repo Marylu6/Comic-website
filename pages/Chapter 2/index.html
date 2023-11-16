@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Connecting to  my CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!--Connecting to font awesome-->
+    <script src="https://kit.fontawesome.com/e1db433d86.js" crossorigin="anonymous"></script>
+    <!--font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<!--boostrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Comic Web</title>
+
+</head>
+
+<body id="background">
+
+<div>
+    <main>
+        <div class="header">
+            <a class="headerbtn" href="index.html"><img src="./images/header.png" alt="image_title"></a>
+        </div>
+        <nav class="navbary">
+            <ol>
+                <li><a class="home" href="index.html">Home</a></li>
+                <li><a class="about" href="About_1/about.html">About</a></li>
+                <li><a class="archive" href="Archive_2/archive.html">Archive</a></li>
+                <li><a class="cast" href="Cast_3/cast.html">Cast</a></li>
+            </ol>
+        </nav>
+    </main>
+    
+        <div class="socialbtns">
+            <!--social media icons-->
+            <a href="#" target="_blank"><i class="twi_icon fa-brands fa-square-twitter fa-2xl"></i></a>
+            <a href="#" target="_blank"><i class="youtu_icon fa-brands fa-square-youtube fa-2xl"></i></a>
+            <a href="#" target="_blank"><i class="red_icon fa-brands fa-square-reddit fa-2xl"></i></a>
+            <a href="#" target="_blank"><i class="face_icon fa-brands fa-square-facebook fa-2xl"></i></a>
+        </div>
+
+        <div id="top"></div>
+
+<div class="number_of_issue container-fluid">
+    <div class="row ">
+        <!--number issues-->
+        <div class=" col-8">
+            <h1 id="number">#1</h1>
+        </div>
+         <!--date of release-->
+     <div class="col">
+        <h2 id="date_of_release">Uploaded: 10/17/23</h2>
+        
+     </div>
+    
+    </div>
+</div>
+   
+<div class="comicpage">
+    <img id="comic-image" src="pages/ch 1 cover.png" alt="Comic Page">
+</div>
+
+<div class="page_controls">
+    <a id="first_page"><i class=" fa-solid fa-angles-left"></i></a>
+    <a id="back_page"><i class=" fa-solid fa-angle-left"></i></a>
+    <a id="forward_page"><i class=" fa-solid fa-angle-right"></i></a>
+    <a id="latest_page"><i class=" fa-solid fa-angles-right"></i></a>
+    
+</div>
+<!--makes you go up-->
+<div class="go-up">
+<button class="go-up-btn" onClick="document.getElementById('top').scrollIntoView();">Go to the top of the comic page</button>
+</div>
+    
+    <section class="comment_sect container-fluid">
+       <div class="row">
+       
+            <h3 class="title_comment col-15">Leave a Comment</h3>
+
+            <form class="form_comments">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                  <label for="comment">Comment:</label>
+                  <textarea id="comment" name="comment" placeholder="Type your comment here"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+
+                <div class="comments"></div>
+              </form>
+        </div>
+
+    </section>
+
+
+</div><!--wrapper-->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+<script src="Java.js"></script>
+
+</body>
+
+
+<footer>
+
+
+
+
+</footer>
+
+
+
+
+</html>
