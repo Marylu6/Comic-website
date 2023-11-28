@@ -3,6 +3,8 @@ personal project: comic website
 
 final update:
 i cant make the links work for some reason they all open ch2cover.png looks like i cant use java to make comic websites, i gotta use basic stuff, but i m gonna try wordpress since it keeps popping up in the searches it sounds pretty basic but i hope is not so simple that it looks like a caveman did it. So yeah this website got stuck gotta try and make another comic webiste
+
+
 notes: 
 
 ///-----test comments-----////------
