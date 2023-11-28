@@ -1,7 +1,8 @@
 # Comic-website
 personal project: comic website
 
-
+final update:
+i cant make the links work for some reason they all open ch2cover.png looks like i cant use java to make comic websites, i gotta use basic stuff, but i m gonna try wordpress since it keeps popping up in the searches it sounds pretty basic but i hope is not so simple that it looks like a caveman did it. So yeah this website got stuck gotta try and make another comic webiste
 notes: 
 
 ///-----test comments-----////------
@@ -9,13 +10,7 @@ notes:
 so i couldnt fix the links on the archive (gracias por la zero ayudas stack overflow) so i need to erase the entire thing and make it more "simpler" will tried putting a small archive list in the index with all the pages. Make sure to hide the list in with a button
 add event listeners to call specific pages-----/////-------
 
-make sure that archive box does not disturb the reader and is pretty(simple but pretty)--------////--------
 
-add more comic pages----////------
-
-add the rest of the web pages---/////------
-
-dont forget the media queries--////------
 
 reference:
 
