@@ -26,6 +26,8 @@ html {
   align-items: center;
   justify-content: center;
   font-family: 'Kalam', cursive;
+  max-width: 400px; /* Set the maximum width of the site */
+margin: 0 auto; /* Center the site horizontally on the page */
 }
 
 
@@ -42,7 +44,7 @@ html {
   border-radius: 30px;
 }
 
-.home,.about,.archive,.cast{
+.home,.about,.cast{
   text-decoration: none;
   padding: 5px 30px;
   border: none;
@@ -54,7 +56,7 @@ html {
   transition: 0.3s;
 }
 
-.home:hover, .about:hover, .archive:hover, .cast:hover {
+.home:hover, .about:hover, .cast:hover {
   background-color: var(--main-gray);
   color: var(--plain-yellow);
 }
@@ -81,8 +83,7 @@ h1{
 color: var(  --main-orange);
 }
 
-.number_of_issue{
-
+.number_of_issue_and-date{
 padding-top: 12px;
 color: var(--main-orange);
 background-color: var( --darker-gray);
@@ -92,6 +93,7 @@ border-radius: 30px;
 }
 #number,#date_of_release{
 font-weight: 700;
+padding-top: 18px;
 }
 
 .page_controls{
@@ -112,18 +114,15 @@ border-radius: 30px;
 transition: 0.3s;
 }
 
-
 #first_page:hover,#back_page:hover,#forward_page:hover,#latest_page:hover{
 background-color: var(--main-gray);
 color: var(--plain-yellow);
 }
 
-
 .go-up{
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: 30px;
 text-decoration: none;
 }
 
@@ -133,6 +132,7 @@ color: var(--main-orange);
 border-radius: 30px;
 margin: 40px 0;
 padding: 14px;
+font-size: 30px;
 border: none;
 transition: 0.3s;
 }
@@ -140,6 +140,17 @@ transition: 0.3s;
 .go-up-btn:hover{
 background-color: var(--main-gray);
 color: var(--plain-yellow);
+}
+
+#arch-btn{
+  background-color: var(--darker-gray);
+  color: var(--main-orange);
+  border-radius: 30px;
+  border: none;
+  padding: 14px;
+  font-size: 33px;
+  font-weight: 700;
+  
 }
 
 .comment_sect{
@@ -195,5 +206,6 @@ transition: 0.3s;
 background-color: var(--main-gray);
 color: var(--plain-yellow);
 }
+
 
 
