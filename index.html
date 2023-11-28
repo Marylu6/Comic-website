@@ -33,7 +33,6 @@
             <ol>
                 <li><a class="home" href="index.html">Home</a></li>
                 <li><a class="about" href="About_1/about.html">About</a></li>
-                <li><a class="archive" href="Archive_2/archive.html">Archive</a></li>
                 <li><a class="cast" href="Cast_3/cast.html">Cast</a></li>
             </ol>
         </nav>
@@ -49,23 +48,47 @@
 
         <div id="top"></div>
 
-<div class="number_of_issue container-fluid">
+<div class="number_of_issue_and-date container-fluid">
     <div class="row ">
         <!--number issues-->
-        <div class=" col-8">
+        <div class=" col-3">
             <h1 id="number">#1</h1>
         </div>
-         <!--date of release-->
+   
+     <!--date of release-->
      <div class="col">
         <h2 id="date_of_release">Uploaded: 10/17/23</h2>
-        
      </div>
-    
+
+     <div class="dropdown archive col">
+        <button id="arch-btn" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+         Archive list
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="index.html?page=ch1cover">Chapter 1</a></li>
+          <li><a class="dropdown-item" href="index.html?page=page1">page 1</a></li>
+          <li><a class="dropdown-item" href="#">page 2</a></li>
+          <li><a class="dropdown-item" href="#">page 3</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="index.html?page=ch2cover">Chapter 2</a></li>
+          <li><a class="dropdown-item disabled" href="#">page 1</a></li>
+          <li><a class="dropdown-item disabled" href="#">page 2</a></li>
+          <li><a class="dropdown-item disabled" href="#">page 3</a></li>
+          <li><hr class="dropdown-divider disabled"></li>
+          <li><a class="dropdown-item disabled" href="#">Chapter 3</a></li>
+          <li><a class="dropdown-item disabled" href="#">page 1</a></li>
+          <li><a class="dropdown-item disabled" href="#">page 2</a></li>
+          <li><a class="dropdown-item disabled" href="#">page 3</a></li>
+        </ul>
+      </div>
+      
     </div>
 </div>
    
 <div class="comicpage">
-    <img id="comic-image" src="pages/ch 1 cover.png" alt="Comic Page">
+
+    <img id="comic-image" class="col" src="pages/ch 1 cover.png" alt="Comic Page">
+
 </div>
 
 <div class="page_controls">
@@ -73,13 +96,14 @@
     <a id="back_page"><i class=" fa-solid fa-angle-left"></i></a>
     <a id="forward_page"><i class=" fa-solid fa-angle-right"></i></a>
     <a id="latest_page"><i class=" fa-solid fa-angles-right"></i></a>
-    
 </div>
 <!--makes you go up-->
 <div class="go-up">
 <button class="go-up-btn" onClick="document.getElementById('top').scrollIntoView();">Go to the top of the comic page</button>
+
 </div>
     
+
     <section class="comment_sect container-fluid">
        <div class="row">
        
