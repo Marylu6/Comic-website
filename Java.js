@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(window.location.search);
     const currentPage = urlParams.get('page');
@@ -10,64 +9,61 @@ document.addEventListener("DOMContentLoaded", function () {
     const latestPageButton = document.getElementById("latest_page");
 
     const comicPages = [
-        "ch 1 cover.png",
+        "ch1cover.png",
         "page1.png",
         "page2.png",
-        "ch 2 cover.png"
+        "ch2cover.png"
         // Add more pages remember it needs to be the same filenames 
     ];
-
-    function updateComicPage(pageIndex) {
-        const comicImage = document.getElementById("comic-image");
-        comicImage.src = `pages/${comicPages[pageIndex]}`;
-    }
-
-    if (currentPage) {
-        const pageIndex = parseInt(currentPage, 10);
-        if (!isNaN(pageIndex) && pageIndex >= 1 && pageIndex <= comicPages.length) {
-            currentPageIndex = pageIndex - 1;
-            updateComicPage();
-        }
-    }
-
+    
     const comicPagesData = [
         { number: "#1", date: "Uploaded: 10/17/23" },
         { number: "#2", date: "Uploaded: 10/24/23" },
         { number: "#3", date: "Uploaded: 10/29/23" },
         { number: "#4", date: "Uploaded: 11/13/23" }
-        // Add number and time remember to update every time a new page is introduce
-    ];
+        // Add number and time remember to update every time a new page is introduced
+    ]; 
+    
+    function updateComicPage(pageIndex) {
+        comicImage.src = `pages/${comicPages[pageIndex]}`;
+        document.getElementById("number").textContent = comicPagesData[pageIndex].number;
+        document.getElementById("date_of_release").textContent = comicPagesData[pageIndex].date;
+    }
+
+    if (currentPage) {
+        const pageIndex = comicPages.findIndex(page => page === currentPage);
+        if (pageIndex !== -1) {
+            currentPageIndex = pageIndex;
+            updateComicPage(currentPageIndex);
+            console.log("Current Page:", currentPage);
+        }
+    }
+    
 
     let currentPageIndex = 0;
 
-    function updateComicPage() {
-        comicImage.src = `pages/${comicPages[currentPageIndex]}`;
-        document.getElementById("number").textContent = comicPagesData[currentPageIndex].number;
-        document.getElementById("date_of_release").textContent = comicPagesData[currentPageIndex].date;
-    }
-
     function goToFirstPage() {
         currentPageIndex = 0;
-        updateComicPage();
+        updateComicPage(currentPageIndex);
     }
 
     function goBackPage() {
         if (currentPageIndex > 0) {
             currentPageIndex--;
-            updateComicPage();
+            updateComicPage(currentPageIndex);
         }
     }
 
     function goForwardPage() {
         if (currentPageIndex < comicPages.length - 1) {
             currentPageIndex++;
-            updateComicPage();
+            updateComicPage(currentPageIndex);
         }
     }
 
     function goToLatestPage() {
         currentPageIndex = comicPages.length - 1;
-        updateComicPage();
+        updateComicPage(currentPageIndex);
     }
 
     // Add click event listeners to the page control buttons
@@ -77,8 +73,10 @@ document.addEventListener("DOMContentLoaded", function () {
     latestPageButton.addEventListener("click", goToLatestPage);
 
     //  display the first page
-    updateComicPage();
+    updateComicPage(currentPageIndex);
 });
+
+
 
 //comment section
 document.addEventListener("DOMContentLoaded", function () {
